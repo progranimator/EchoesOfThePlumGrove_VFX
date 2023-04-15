@@ -4,6 +4,7 @@ public class BeeHive : MonoBehaviour
 {
     public GameObject[] bees; // The array of bees to control
     public GameObject[] flowerPoints; // The array of flower points to move to
+    public float hiveRotationSpeed = 1.0f; // The speed of the hive rotation
 
     void Start()
     {
@@ -36,5 +37,8 @@ public class BeeHive : MonoBehaviour
                 }
             }
         }
+
+        // Rotate the hive
+        transform.Rotate(Vector3.up, hiveRotationSpeed * Time.deltaTime);
     }
 }

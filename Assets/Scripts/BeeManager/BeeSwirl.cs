@@ -21,6 +21,8 @@ public class BeeSwirl : MonoBehaviour
     public float zSwirlAmplitudeMin = 0.4f;
     public float zSwirlAmplitudeMax = 0.5f;
 
+    public float swirlAngleFluctuation = 0.1f; // the amount to fluctuate the swirl angle by
+
     private float currentAngleX = 0.0f; // the current angle of the bee around the center on the X-axis
     private float currentAngleY = 0.0f; // the current angle of the bee around the center on the Y-axis
     private float currentAngleZ = 0.0f; // the current angle of the bee around the center on the Z-axis
@@ -49,11 +51,18 @@ public class BeeSwirl : MonoBehaviour
         float ySwirlAmplitude = Random.Range(ySwirlAmplitudeMin, ySwirlAmplitudeMax);
         float zSwirlAmplitude = Random.Range(zSwirlAmplitudeMin, zSwirlAmplitudeMax);
 
-        float x = center.position.x + Mathf.Cos(currentAngleX + xSwirlOffset) * (swirlRadius + xSwirlAmplitude);
-        float y = center.position.y + Mathf.Sin(currentAngleY + ySwirlOffset) * (swirlRadius + ySwirlAmplitude);
-        float z = center.position.z + Mathf.Cos(currentAngleZ + zSwirlOffset) * (swirlRadius + zSwirlAmplitude);
+        float xSwirlAngle = currentAngleX + xSwirlOffset + Random.Range(-swirlAngleFluctuation, swirlAngleFluctuation);
+        float ySwirlAngle = currentAngleY + ySwirlOffset + Random.Range(-swirlAngleFluctuation, swirlAngleFluctuation);
+        float zSwirlAngle = currentAngleZ + zSwirlOffset + Random.Range(-swirlAngleFluctuation, swirlAngleFluctuation);
 
-        // Set the new position of the bee
+        float x = center.position.x + Mathf.Cos(xSwirlAngle) *
+            (swirlRadius + xSwirlAmplitude * Mathf.Sin(Time.time / xSwirlInterval * 2 * Mathf.PI));
+        float y = center.position.y + Mathf.Cos(ySwirlAngle) *
+            (swirlRadius + ySwirlAmplitude * Mathf.Sin(Time.time / ySwirlInterval * 2 * Mathf.PI));
+        float z = center.position.z + Mathf.Cos(zSwirlAngle) *
+            (swirlRadius + zSwirlAmplitude * Mathf.Sin(Time.time / zSwirlInterval * 2 * Mathf.PI));
+
+        // Update the position of the bee
         transform.position = new Vector3(x, y, z);
     }
 }
