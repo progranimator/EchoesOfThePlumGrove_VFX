@@ -1,44 +1,47 @@
 using UnityEngine;
 
-public class BeeHive : MonoBehaviour
+namespace BeeManager
 {
-    public GameObject[] bees; // The array of bees to control
-    public GameObject[] flowerPoints; // The array of flower points to move to
-    public float hiveRotationSpeed = 1.0f; // The speed of the hive rotation
-
-    void Start()
+    public class BeeHive : MonoBehaviour
     {
-        // Set the flower points for each bee
-        foreach (GameObject bee in bees)
-        {
-            if (bee != null) // Null check for bee object
-            {
-                AIBee aiBee = bee.GetComponent<AIBee>();
-                if (aiBee != null) // Null check for AIBee component
-                {
-                    aiBee.SetFlowerPoints(flowerPoints);
-                }
-            }
-        }
-    }
+        public GameObject[] bees; // The array of bees to control
+        public GameObject[] flowerPoints; // The array of flower points to move to
+        public float hiveRotationSpeed = 1.0f; // The speed of the hive rotation
 
-    void Update()
-    {
-        // Set a random target position for each bee
-        foreach (GameObject bee in bees)
+        void Start()
         {
-            if (bee != null) // Null check for bee object
+            // Set the flower points for each bee
+            foreach (GameObject bee in bees)
             {
-                AIBee aiBee = bee.GetComponent<AIBee>();
-                if (aiBee != null) // Null check for AIBee component
+                if (bee != null) // Null check for bee object
                 {
-                    Vector3 targetPosition = flowerPoints[Random.Range(0, flowerPoints.Length)].transform.position;
-                    aiBee.SetTargetPosition(targetPosition);
+                    AIBee aiBee = bee.GetComponent<AIBee>();
+                    if (aiBee != null) // Null check for AIBee component
+                    {
+                        aiBee.SetFlowerPoints(flowerPoints);
+                    }
                 }
             }
         }
 
-        // Rotate the hive
-        transform.Rotate(Vector3.up, hiveRotationSpeed * Time.deltaTime);
+        void Update()
+        {
+            // Set a random target position for each bee
+            foreach (GameObject bee in bees)
+            {
+                if (bee != null) // Null check for bee object
+                {
+                    AIBee aiBee = bee.GetComponent<AIBee>();
+                    if (aiBee != null) // Null check for AIBee component
+                    {
+                        Vector3 targetPosition = flowerPoints[Random.Range(0, flowerPoints.Length)].transform.position;
+                        aiBee.SetTargetPosition(targetPosition);
+                    }
+                }
+            }
+
+            // Rotate the hive
+            transform.Rotate(Vector3.up, hiveRotationSpeed * Time.deltaTime);
+        }
     }
 }

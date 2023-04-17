@@ -1,27 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class BeeWave : MonoBehaviour
+namespace BeeManager
 {
-    public float amplitude = 1f; // The amplitude of the up and down movement
-    public float frequency = 1f; // The frequency of the up and down movement
-
-    private Vector3 startPos; // The starting position of the bee
-
-    // Start is called before the first frame update
-    void Start()
+    public class BeeWave : MonoBehaviour
     {
-        startPos = transform.position; // Store the starting position of the bee
-    }
+        public float amplitude = 1f; // The amplitude of the up and down movement
+        public float frequency = 1f; // The frequency of the up and down movement
 
-    // Update is called once per frame
-    void Update()
-    {
-        // Calculate the new Y position based on a sine wave*excuse my 
-        float newY = startPos.y + amplitude * Mathf.Sin(Time.time * frequency);
+        private Vector3 startPos; // The starting position of the bee
 
-        // Update the bee's position
-        transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+        // Start is called before the first frame update
+        void Start()
+        {
+            startPos = transform.position; // Store the starting position of the bee
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            // Calculate the new Y position based on a sine wave*excuse my 
+            float newY = startPos.y + amplitude * Mathf.Sin(Time.time * frequency);
+
+            // Update the bee's position
+            transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+        }
     }
 }

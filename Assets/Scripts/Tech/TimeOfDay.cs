@@ -1,29 +1,32 @@
 using UnityEditor;
 using UnityEngine;
 
-public class TimeOfDay : EditorWindow
+namespace Tech
 {
-    private Light light;
-    private float lightRotation;
-
-    void OnEnable()
+    public class TimeOfDay : EditorWindow
     {
-        // Find the first light in the scene
-        light = FindObjectOfType<Light>();
-    }
+        private Light light;
+        private float lightRotation;
 
-    void OnGUI()
-    {
-        // Add a slider to the window to control the light rotation
-        lightRotation = EditorGUILayout.Slider("Light Rotation", lightRotation, 0f, 360f);
+        void OnEnable()
+        {
+            // Find the first light in the scene
+            light = FindObjectOfType<Light>();
+        }
 
-        // Update the light rotation based on the slider value
-        light.transform.rotation = Quaternion.Euler(lightRotation, 0f, 0f);
-    }
+        void OnGUI()
+        {
+            // Add a slider to the window to control the light rotation
+            lightRotation = EditorGUILayout.Slider("Light Rotation", lightRotation, 0f, 360f);
 
-    [MenuItem("Window/TimeOfDay")]
-    public static void ShowWindow()
-    {
-        EditorWindow.GetWindow(typeof(TimeOfDay));
+            // Update the light rotation based on the slider value
+            light.transform.rotation = Quaternion.Euler(lightRotation, 0f, 0f);
+        }
+
+        [MenuItem("Window/TimeOfDay")]
+        public static void ShowWindow()
+        {
+            EditorWindow.GetWindow(typeof(TimeOfDay));
+        }
     }
 }
