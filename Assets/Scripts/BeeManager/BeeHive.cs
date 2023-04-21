@@ -7,6 +7,8 @@ namespace BeeManager
         public GameObject[] bees; // The array of bees to control
         public GameObject[] flowerPoints; // The array of flower points to move to
         public float hiveRotationSpeed = 1.0f; // The speed of the hive rotation
+        public float timeUntilNextScript = 5.0f;
+        public float timeElapsed = 0.0f;
 
         void Start()
         {
@@ -39,9 +41,8 @@ namespace BeeManager
                     }
                 }
             }
-
-            // Rotate the hive
-            transform.Rotate(Vector3.up, hiveRotationSpeed * Time.deltaTime);
         }
     }
 }
+
+

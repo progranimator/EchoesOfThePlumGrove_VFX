@@ -1,0 +1,1813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author/>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments/>
+    </contributor>
+    <created>2023-04-20T23:14:32Z</created>
+    <keywords/>
+    <modified>2023-04-20T23:14:32Z</modified>
+    <revision/>
+    <subject/>
+    <title/>
+    <unit meter="0.010000" name="centimeter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="file6-image" name="file6">
+      <init_from>file://O:/EchoesOfThePlumGrove/bee/BumbleBee_Body.tga</init_from>
+    </image>
+    <image id="file7-image" name="file7">
+      <init_from>file://O:/EchoesOfThePlumGrove/pinkButterfly/BumbleBee_Wing.tga</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="M_Bee_Body" name="M_Bee_Body">
+      <instance_effect url="#M_Bee_Body-fx"/>
+    </material>
+    <material id="M_Bee_Wing" name="M_Bee_Wing">
+      <instance_effect url="#M_Bee_Wing-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="M_Bee_Body-fx" name="M_Bee_Body">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file6-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <texture texture="file6-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="M_Bee_Wing-fx" name="M_Bee_Wing">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file7-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <texture texture="file7-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="sm_Bee_Body-lib" name="sm_Bee_BodyMesh">
+      <mesh>
+        <source id="sm_Bee_Body-POSITION">
+          <float_array id="sm_Bee_Body-POSITION-array" count="84">
+-0.325700 -0.000000 0.051123
+-0.246431 -0.000000 0.134765
+-0.137557 0.000000 0.181090
+0.000000 0.000000 0.196838
+0.137557 0.000000 0.181090
+0.246431 -0.000000 0.141722
+0.329912 0.000000 0.039363
+-0.325700 -0.000000 0.016076
+-0.246431 -0.000000 0.042830
+-0.137557 0.000000 0.057648
+0.000000 0.000000 0.062685
+0.137557 0.000000 0.057648
+0.246431 0.000000 0.060167
+0.329912 0.000000 0.012314
+-0.325700 -0.000000 -0.016668
+-0.246431 -0.000000 -0.043063
+-0.137557 0.000000 -0.057682
+0.000000 0.000000 -0.062652
+0.137557 0.000000 -0.057682
+0.246431 0.000000 -0.060167
+0.329912 0.000000 -0.012957
+-0.325700 -0.000000 -0.051937
+-0.246431 -0.000000 -0.135579
+-0.137557 0.000000 -0.181904
+0.000000 0.000000 -0.197652
+0.137557 0.000000 -0.181904
+0.246431 -0.000000 -0.142536
+0.329912 0.000000 -0.040177
+</float_array>
+          <technique_common>
+            <accessor source="#sm_Bee_Body-POSITION-array" count="28" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sm_Bee_Body-Normal0">
+          <float_array id="sm_Bee_Body-Normal0-array" count="84">
+0.000000 1.000000 -0.000000
+-0.000000 1.000000 -0.000000
+-0.000000 1.000000 -0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-0.000000 1.000000 -0.000000
+0.000000 1.000000 0.000000
+-0.000000 1.000000 -0.000000
+-0.000000 1.000000 -0.000000
+-0.000000 1.000000 -0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 -0.000000
+-0.000000 1.000000 -0.000000
+0.000000 1.000000 0.000000
+-0.000000 1.000000 0.000000
+-0.000000 1.000000 -0.000000
+-0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#sm_Bee_Body-Normal0-array" count="28" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sm_Bee_Body-UV0">
+          <float_array id="sm_Bee_Body-UV0-array" count="56">
+0.005683 0.417905
+0.145300 0.241926
+0.300000 0.181029
+0.500000 0.161567
+0.700000 0.180368
+0.828429 0.229863
+0.941578 0.346303
+0.005683 0.458267
+0.126035 0.428700
+0.277232 0.409961
+0.500000 0.409961
+0.696497 0.409961
+0.859060 0.397237
+1.004629 0.469303
+0.005683 0.508201
+0.145300 0.556508
+0.300000 0.560502
+0.500000 0.562253
+0.696497 0.560931
+0.834872 0.596852
+1.011634 0.522079
+0.005683 0.559385
+0.145300 0.717090
+0.300000 0.788128
+0.500000 0.805178
+0.700000 0.778183
+0.840653 0.744585
+0.989992 0.627582
+</float_array>
+          <technique_common>
+            <accessor source="#sm_Bee_Body-UV0-array" count="28" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="sm_Bee_Body-VERTEX">
+          <input semantic="POSITION" source="#sm_Bee_Body-POSITION"/>
+          <input semantic="NORMAL" source="#sm_Bee_Body-Normal0"/>
+        </vertices>
+        <triangles count="36" material="M_Bee_Body">
+          <input semantic="VERTEX" offset="0" source="#sm_Bee_Body-VERTEX"/>
+          <input semantic="TEXCOORD" offset="1" set="0" source="#sm_Bee_Body-UV0"/>
+          <p> 0 0 8 8 7 7 8 8 0 0 1 1 1 1 9 9 8 8 9 9 1 1 2 2 2 2 10 10 9 9 10 10 2 2 3 3 4 4 10 10 3 3 10 10 4 4 11 11 5 5 11 11 4 4 11 11 5 5 12 12 13 13 12 12 6 6 5 5 6 6 12 12 7 7 15 15 14 14 15 15 7 7 8 8 8 8 16 16 15 15 16 16 8 8 9 9 9 9 17 17 16 16 17 17 9 9 10 10 11 11 17 17 10 10 17 17 11 11 18 18 11 11 19 19 18 18 19 19 11 11 12 12 12 12 13 13 19 19 19 19 13 13 20 20 22 22 21 21 15 15 14 14 15 15 21 21 16 16 22 22 15 15 22 22 16 16 23 23 17 17 23 23 16 16 23 23 17 17 24 24 17 17 18 18 25 25 17 17 25 25 24 24 18 18 19 19 26 26 18 18 26 26 25 25 19 19 27 27 26 26 27 27 19 19 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="sm_Bee_Wing_l-lib" name="sm_Bee_Wing_lMesh">
+      <mesh>
+        <source id="sm_Bee_Wing_l-POSITION">
+          <float_array id="sm_Bee_Wing_l-POSITION-array" count="84">
+-0.607965 -0.000000 0.075003
+-0.528696 -0.000000 0.158645
+-0.419821 -0.000000 0.204970
+-0.282265 -0.000000 0.220718
+-0.144708 -0.000000 0.204970
+-0.035833 -0.000000 0.165602
+0.047648 -0.000000 0.063243
+-0.607965 -0.000000 0.039956
+-0.528696 -0.000000 0.066710
+-0.419821 -0.000000 0.081528
+-0.282265 -0.000000 0.086566
+-0.144708 -0.000000 0.081528
+-0.035833 -0.000000 0.084047
+0.047648 -0.000000 0.036194
+-0.607965 -0.000000 0.007212
+-0.528696 -0.000000 -0.019183
+-0.419821 -0.000000 -0.033802
+-0.282265 -0.000000 -0.038771
+-0.144708 -0.000000 -0.033802
+-0.035833 -0.000000 -0.036287
+0.047648 -0.000000 0.010923
+-0.607965 -0.000000 -0.028057
+-0.528696 0.000000 -0.111699
+-0.419821 -0.000000 -0.158024
+-0.282265 -0.000000 -0.173772
+-0.144708 -0.000000 -0.158024
+-0.035833 -0.000000 -0.118655
+0.047648 -0.000000 -0.016297
+</float_array>
+          <technique_common>
+            <accessor source="#sm_Bee_Wing_l-POSITION-array" count="28" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sm_Bee_Wing_l-Normal0">
+          <float_array id="sm_Bee_Wing_l-Normal0-array" count="84">
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#sm_Bee_Wing_l-Normal0-array" count="28" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sm_Bee_Wing_l-UV0">
+          <float_array id="sm_Bee_Wing_l-UV0-array" count="56">
+0.737643 0.969425
+0.844458 0.821986
+1.006342 0.875966
+0.965666 0.932768
+0.481879 0.954174
+0.653520 0.715688
+0.234747 0.821916
+0.437227 0.565882
+0.094623 0.632385
+0.241801 0.407884
+0.014189 0.415019
+0.086083 0.297181
+-0.004658 0.182754
+0.025069 0.144678
+0.943080 0.685856
+1.044173 0.823138
+0.784804 0.537240
+0.578327 0.377614
+0.370183 0.239577
+0.218837 0.125448
+0.052755 0.109215
+1.048061 0.540948
+1.084734 0.766496
+0.924030 0.347995
+0.727821 0.178145
+0.506427 0.060963
+0.308592 0.009340
+0.082481 0.071139
+</float_array>
+          <technique_common>
+            <accessor source="#sm_Bee_Wing_l-UV0-array" count="28" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="sm_Bee_Wing_l-VERTEX">
+          <input semantic="POSITION" source="#sm_Bee_Wing_l-POSITION"/>
+          <input semantic="NORMAL" source="#sm_Bee_Wing_l-Normal0"/>
+        </vertices>
+        <triangles count="36" material="M_Bee_Wing">
+          <input semantic="VERTEX" offset="0" source="#sm_Bee_Wing_l-VERTEX"/>
+          <input semantic="TEXCOORD" offset="1" set="0" source="#sm_Bee_Wing_l-UV0"/>
+          <p> 0 3 8 1 7 2 8 1 0 3 1 0 1 0 9 5 8 1 9 5 1 0 2 4 2 4 10 7 9 5 10 7 2 4 3 6 4 8 10 7 3 6 10 7 4 8 11 9 5 10 11 9 4 8 11 9 5 10 12 11 13 13 12 11 6 12 5 10 6 12 12 11 7 2 15 14 14 15 15 14 7 2 8 1 8 1 16 16 15 14 16 16 8 1 9 5 9 5 17 17 16 16 17 17 9 5 10 7 11 9 17 17 10 7 17 17 11 9 18 18 11 9 19 19 18 18 19 19 11 9 12 11 12 11 13 13 19 19 19 19 13 13 20 20 22 21 21 22 15 14 14 15 15 14 21 22 16 16 22 21 15 14 22 21 16 16 23 23 17 17 23 23 16 16 23 23 17 17 24 24 17 17 18 18 25 25 17 17 25 25 24 24 18 18 19 19 26 26 18 18 26 26 25 25 19 19 27 27 26 26 27 27 19 19 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="sm_Bee_Wing_r-lib" name="sm_Bee_Wing_rMesh">
+      <mesh>
+        <source id="sm_Bee_Wing_r-POSITION">
+          <float_array id="sm_Bee_Wing_r-POSITION-array" count="84">
+-0.607965 -0.000000 0.075003
+-0.528696 -0.000000 0.158645
+-0.419821 -0.000000 0.204970
+-0.282265 -0.000000 0.220718
+-0.144708 -0.000000 0.204970
+-0.035833 -0.000000 0.165602
+0.047648 -0.000000 0.063243
+-0.607965 -0.000000 0.039956
+-0.528696 -0.000000 0.066710
+-0.419821 -0.000000 0.081528
+-0.282265 -0.000000 0.086566
+-0.144708 -0.000000 0.081528
+-0.035833 -0.000000 0.084047
+0.047648 -0.000000 0.036194
+-0.607965 -0.000000 0.007212
+-0.528696 -0.000000 -0.019183
+-0.419821 -0.000000 -0.033802
+-0.282265 -0.000000 -0.038771
+-0.144708 -0.000000 -0.033802
+-0.035833 -0.000000 -0.036287
+0.047648 -0.000000 0.010923
+-0.607965 -0.000000 -0.028057
+-0.528696 0.000000 -0.111699
+-0.419821 -0.000000 -0.158024
+-0.282265 -0.000000 -0.173772
+-0.144708 -0.000000 -0.158024
+-0.035833 -0.000000 -0.118655
+0.047648 -0.000000 -0.016297
+</float_array>
+          <technique_common>
+            <accessor source="#sm_Bee_Wing_r-POSITION-array" count="28" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sm_Bee_Wing_r-Normal0">
+          <float_array id="sm_Bee_Wing_r-Normal0-array" count="84">
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#sm_Bee_Wing_r-Normal0-array" count="28" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sm_Bee_Wing_r-UV0">
+          <float_array id="sm_Bee_Wing_r-UV0-array" count="56">
+0.737643 0.969425
+0.844458 0.821986
+1.006342 0.875966
+0.965666 0.932768
+0.481879 0.954174
+0.653520 0.715688
+0.234747 0.821916
+0.437227 0.565882
+0.094623 0.632385
+0.241801 0.407884
+0.014189 0.415019
+0.086083 0.297181
+-0.004658 0.182754
+0.025069 0.144678
+0.943080 0.685856
+1.044173 0.823138
+0.784804 0.537240
+0.578327 0.377614
+0.370183 0.239577
+0.218837 0.125448
+0.052755 0.109215
+1.048061 0.540948
+1.084734 0.766496
+0.924030 0.347995
+0.727821 0.178145
+0.506427 0.060963
+0.308592 0.009340
+0.082481 0.071139
+</float_array>
+          <technique_common>
+            <accessor source="#sm_Bee_Wing_r-UV0-array" count="28" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="sm_Bee_Wing_r-VERTEX">
+          <input semantic="POSITION" source="#sm_Bee_Wing_r-POSITION"/>
+          <input semantic="NORMAL" source="#sm_Bee_Wing_r-Normal0"/>
+        </vertices>
+        <triangles count="36" material="M_Bee_Wing">
+          <input semantic="VERTEX" offset="0" source="#sm_Bee_Wing_r-VERTEX"/>
+          <input semantic="TEXCOORD" offset="1" set="0" source="#sm_Bee_Wing_r-UV0"/>
+          <p> 0 3 8 1 7 2 8 1 0 3 1 0 1 0 9 5 8 1 9 5 1 0 2 4 2 4 10 7 9 5 10 7 2 4 3 6 4 8 10 7 3 6 10 7 4 8 11 9 5 10 11 9 4 8 11 9 5 10 12 11 13 13 12 11 6 12 5 10 6 12 12 11 7 2 15 14 14 15 15 14 7 2 8 1 8 1 16 16 15 14 16 16 8 1 9 5 9 5 17 17 16 16 17 17 9 5 10 7 11 9 17 17 10 7 17 17 11 9 18 18 11 9 19 19 18 18 19 19 11 9 12 11 12 11 13 13 19 19 19 19 13 13 20 20 22 21 21 22 15 14 14 15 15 14 21 22 16 16 22 21 15 14 22 21 16 16 23 23 17 17 23 23 16 16 23 23 17 17 24 24 17 17 18 18 25 25 17 17 25 25 24 24 18 18 19 19 26 26 18 18 26 26 25 25 19 19 27 27 26 26 27 27 19 19 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="sm_Bee_BodyController">
+      <skin source="#sm_Bee_Body-lib">
+        <bind_shape_matrix>26.628356 -0.000000 0.000000 0.000000 0.000000 0.000000 -26.628356 0.059045 0.000000 26.628356 0.000000 0.155289 0.000000 0.000000 0.000000 1.000000
+</bind_shape_matrix>
+        <source id="sm_Bee_BodyController-Joints">
+          <Name_array id="sm_Bee_BodyController-Joints-array" count="9">
+ body1 head joint3 wing_r wing_r1 joint5 wing_l wing_l2 joint4</Name_array>
+          <technique_common>
+            <accessor source="#sm_Bee_BodyController-Joints-array" count="9">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sm_Bee_BodyController-Matrices">
+          <float_array id="sm_Bee_BodyController-Matrices-array" count="144">
+
+1.000000 0.000000 0.000000 -7.193541 -0.000000 1.000000 0.000000 1.615170 0.000000 -0.000000 1.000000 -0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 0.340761 -0.000000 1.000000 0.000000 1.505181 0.000000 -0.000000 1.000000 -0.105741 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.072587 -0.000000 1.000000 0.000000 1.306518 0.000000 -0.000000 1.000000 -0.057980 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 2.103542 -0.000000 1.000000 0.000000 -0.977842 0.000000 -0.000000 1.000000 0.025907 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.752500 -0.000000 1.000000 0.000000 -5.413636 0.000000 -0.000000 1.000000 0.583659 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -4.680212 -0.000000 1.000000 0.000000 -8.723947 0.000000 -0.000000 1.000000 0.879030 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 2.088273 -0.000000 1.000000 0.000000 -0.988854 0.000000 -0.000000 1.000000 -0.131337 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.739534 -0.000000 1.000000 0.000000 -5.237986 0.000000 -0.000000 1.000000 -0.919940 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -4.903675 -0.000000 1.000000 0.000000 -8.523140 0.000000 -0.000000 1.000000 -1.398107 0.000000 0.000000 0.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#sm_Bee_BodyController-Matrices-array" count="9" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sm_Bee_BodyController-Weights">
+          <float_array id="sm_Bee_BodyController-Weights-array" count="38">
+
+1.000000 0.500000 0.500000 0.524694 0.475306 0.272668 0.727332 0.504294 0.495706 0.807601 0.192399 0.975902 0.024098 0.993462 0.006538 0.500000
+0.500000 0.913923 0.086077 0.999959 0.970334 0.029666 0.999976 0.999996 0.987424 0.500000 0.500000 0.511034 0.488966 0.500000 0.654359 0.861705
+0.972798 0.500000 0.500000 0.501993 0.498007 0.940887</float_array>
+          <technique_common>
+            <accessor source="#sm_Bee_BodyController-Weights-array" count="38">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#sm_Bee_BodyController-Joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#sm_Bee_BodyController-Matrices"/>
+        </joints>
+        <vertex_weights count="23">
+          <input semantic="JOINT" offset="0" source="#sm_Bee_BodyController-Joints"/>
+          <input semantic="WEIGHT" offset="1" source="#sm_Bee_BodyController-Weights"/>
+          <vcount>2 2 2 2 2 2 2 2 2 1 2 1 1 1 2 2 1 1 1 1 2 2 1</vcount>
+          <v>1 1 2 2 1 3 2 4 0 5 1 6 0 7 1 8 0 9 1 10 0 11 1 12 0 13 1 14 1 15 2 16 1 17 2 18 1 19 0 20 1 21 0 22 0 23 0 24 1 25 2 26 1 27 2 28 1 29 0 30 0 31 0 32 1 33 2 34 1 35 2 36 0 37</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="sm_Bee_Wing_lController">
+      <skin source="#sm_Bee_Wing_l-lib">
+        <bind_shape_matrix>-14.854031 1.575174 -16.347659 -2.213925 -13.065063 1.385466 18.586105 0.785080 1.682603 24.663507 0.000000 0.036609 0.000000 0.000000 0.000000 1.000000
+</bind_shape_matrix>
+        <source id="sm_Bee_Wing_lController-Joints">
+          <Name_array id="sm_Bee_Wing_lController-Joints-array" count="9">
+ body1 head joint3 wing_r wing_r1 joint5 wing_l wing_l2 joint4</Name_array>
+          <technique_common>
+            <accessor source="#sm_Bee_Wing_lController-Joints-array" count="9">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sm_Bee_Wing_lController-Matrices">
+          <float_array id="sm_Bee_Wing_lController-Matrices-array" count="144">
+
+1.000000 0.000000 0.000000 -7.193541 -0.000000 1.000000 0.000000 1.615170 0.000000 -0.000000 1.000000 -0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 0.340761 -0.000000 1.000000 0.000000 1.505181 0.000000 -0.000000 1.000000 -0.105741 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.072587 -0.000000 1.000000 0.000000 1.306518 0.000000 -0.000000 1.000000 -0.057980 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 2.103542 -0.000000 1.000000 0.000000 -0.977842 0.000000 -0.000000 1.000000 0.025907 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.752500 -0.000000 1.000000 0.000000 -5.413636 0.000000 -0.000000 1.000000 0.583659 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -4.680212 -0.000000 1.000000 0.000000 -8.723947 0.000000 -0.000000 1.000000 0.879030 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 2.088273 -0.000000 1.000000 0.000000 -0.988854 0.000000 -0.000000 1.000000 -0.131337 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.739534 -0.000000 1.000000 0.000000 -5.237986 0.000000 -0.000000 1.000000 -0.919940 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -4.903675 -0.000000 1.000000 0.000000 -8.523140 0.000000 -0.000000 1.000000 -1.398107 0.000000 0.000000 0.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#sm_Bee_Wing_lController-Matrices-array" count="9" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sm_Bee_Wing_lController-Weights">
+          <float_array id="sm_Bee_Wing_lController-Weights-array" count="48">
+
+1.000000 0.500000 0.500000 0.500000 0.500000 0.561411 0.438589 0.499758 0.500242 0.519769 0.505791 0.500000 0.500000 0.500000 0.500000 0.500000
+0.500000 0.936164 0.516926 0.483074 0.590748 0.512290 0.500000 0.500000 0.500000 0.500000 0.504160 0.495840 0.681602 0.555984 0.444016 0.572178
+0.835827 0.647013 0.500000 0.500000 0.500000 0.500000 0.505062 0.494938 0.496923 0.609252 0.069345 0.598579 0.258420 0.596393 0.595385 0.404615</float_array>
+          <technique_common>
+            <accessor source="#sm_Bee_Wing_lController-Weights-array" count="48">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#sm_Bee_Wing_lController-Joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#sm_Bee_Wing_lController-Matrices"/>
+        </joints>
+        <vertex_weights count="28">
+          <input semantic="JOINT" offset="0" source="#sm_Bee_Wing_lController-Joints"/>
+          <input semantic="WEIGHT" offset="1" source="#sm_Bee_Wing_lController-Weights"/>
+          <vcount>2 2 2 2 1 1 2 2 2 1 2 1 1 2 2 2 1 2 1 2 2 2 2 1 1 2 2 2</vcount>
+          <v>4 1 5 2 4 3 5 4 4 5 5 6 3 7 4 8 3 9 3 10 1 11 3 12 4 13 5 14 4 15 5 16 4 17 3 18 4 19 3 20 3 21 1 22 3 23 4 24 5 25 4 26 5 27 4 28 3 29 4 30 3 31 1 32 3 33 1 34 3 35 4 36 5 37 4 38 5 39 4 40 3 41 1 42 3 43 1 44 3 45 1 46 3 47</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="sm_Bee_Wing_rController">
+      <skin source="#sm_Bee_Wing_r-lib">
+        <bind_shape_matrix>-14.807868 -2.146991 -16.347659 -2.213925 -13.024460 -1.888415 18.586105 0.785080 -2.293418 24.586858 0.000000 0.170613 0.000000 0.000000 0.000000 1.000000
+</bind_shape_matrix>
+        <source id="sm_Bee_Wing_rController-Joints">
+          <Name_array id="sm_Bee_Wing_rController-Joints-array" count="9">
+ body1 head joint3 wing_r wing_r1 joint5 wing_l wing_l2 joint4</Name_array>
+          <technique_common>
+            <accessor source="#sm_Bee_Wing_rController-Joints-array" count="9">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sm_Bee_Wing_rController-Matrices">
+          <float_array id="sm_Bee_Wing_rController-Matrices-array" count="144">
+
+1.000000 0.000000 0.000000 -7.193541 -0.000000 1.000000 0.000000 1.615170 0.000000 -0.000000 1.000000 -0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 0.340761 -0.000000 1.000000 0.000000 1.505181 0.000000 -0.000000 1.000000 -0.105741 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.072587 -0.000000 1.000000 0.000000 1.306518 0.000000 -0.000000 1.000000 -0.057980 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 2.103542 -0.000000 1.000000 0.000000 -0.977842 0.000000 -0.000000 1.000000 0.025907 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.752500 -0.000000 1.000000 0.000000 -5.413636 0.000000 -0.000000 1.000000 0.583659 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -4.680212 -0.000000 1.000000 0.000000 -8.723947 0.000000 -0.000000 1.000000 0.879030 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 2.088273 -0.000000 1.000000 0.000000 -0.988854 0.000000 -0.000000 1.000000 -0.131337 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.739534 -0.000000 1.000000 0.000000 -5.237986 0.000000 -0.000000 1.000000 -0.919940 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -4.903675 -0.000000 1.000000 0.000000 -8.523140 0.000000 -0.000000 1.000000 -1.398107 0.000000 0.000000 0.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#sm_Bee_Wing_rController-Matrices-array" count="9" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sm_Bee_Wing_rController-Weights">
+          <float_array id="sm_Bee_Wing_rController-Weights-array" count="32">
+
+1.000000 0.500000 0.500000 0.537094 0.601249 0.500024 0.700988 0.718944 0.720828 0.500000 0.500000 0.872959 0.642527 0.493579 0.724608 0.726677
+0.722770 0.500000 0.503854 0.781874 0.664347 0.460778 0.727298 0.726992 0.724415 0.500000 0.503046 0.532328 0.344756 0.712838 0.725193 0.725193</float_array>
+          <technique_common>
+            <accessor source="#sm_Bee_Wing_rController-Weights-array" count="32">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#sm_Bee_Wing_rController-Joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#sm_Bee_Wing_rController-Matrices"/>
+        </joints>
+        <vertex_weights count="28">
+          <input semantic="JOINT" offset="0" source="#sm_Bee_Wing_rController-Joints"/>
+          <input semantic="WEIGHT" offset="1" source="#sm_Bee_Wing_rController-Weights"/>
+          <vcount>1 1 1 2 1 1 1 1 1 1 2 1 1 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1</vcount>
+          <v>7 1 7 2 7 3 6 4 7 5 6 6 6 7 6 8 7 9 7 10 7 11 6 12 7 13 6 14 6 15 6 16 7 17 7 18 7 19 6 20 7 21 6 22 6 23 6 24 7 25 7 26 7 27 6 28 6 29 6 30 6 31</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_animations>
+    <animation id="body1-anim" name="body1">
+      <animation>
+        <source id="body1-Matrix-animation-input">
+          <float_array id="body1-Matrix-animation-input-array" count="16">
+
+0.000000 0.041667 0.083333 0.125000 0.166667 0.208333 0.250000 0.291667 0.333333 0.375000 0.416667 0.458333 0.500000 0.541667 0.583333 0.625000</float_array>
+          <technique_common>
+            <accessor source="#body1-Matrix-animation-input-array" count="16">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="body1-Matrix-animation-output-transform">
+          <float_array id="body1-Matrix-animation-output-transform-array" count="256">
+
+1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -1.615170 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -1.667657 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -1.806034 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -2.001669 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -2.225934 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -2.450199 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -2.645834 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -2.784211 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -2.836698 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -2.769033 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -2.594529 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -2.355922 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -2.095946 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -1.857339 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -1.682835 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -1.615170 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#body1-Matrix-animation-output-transform-array" count="16" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="body1-Interpolations">
+          <Name_array id="body1-Interpolations-array" count="16">
+ LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR
+LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#body1-Interpolations-array" count="16">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="body1-Matrix-animation-transform">
+          <input semantic="INPUT" source="#body1-Matrix-animation-input"/>
+          <input semantic="OUTPUT" source="#body1-Matrix-animation-output-transform"/>
+          <input semantic="INTERPOLATION" source="#body1-Interpolations"/>
+        </sampler>
+        <channel source="#body1-Matrix-animation-transform" target="body1/matrix"/>
+      </animation>
+      <animation>
+        <source id="body1-visibility-animation-input">
+          <float_array id="body1-visibility-animation-input-array" count="3">
+
+0.000000 0.333333 0.625000</float_array>
+          <technique_common>
+            <accessor source="#body1-visibility-animation-input-array" count="3">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="body1-visibility-animation-output">
+          <float_array id="body1-visibility-animation-output-array" count="3">
+
+1.000000 1.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#body1-visibility-animation-output-array" count="3">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="body1-visibility-animation-intan">
+          <float_array id="body1-visibility-animation-intan-array" count="3">
+
+0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#body1-visibility-animation-intan-array" count="3">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="body1-visibility-animation-outtan">
+          <float_array id="body1-visibility-animation-outtan-array" count="3">
+
+0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#body1-visibility-animation-outtan-array" count="3">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="body1-visibility-animation-interpolation">
+          <Name_array id="body1-visibility-animation-interpolation-array" count="3">
+ STEP STEP STEP</Name_array>
+          <technique_common>
+            <accessor source="#body1-visibility-animation-interpolation-array" count="3">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="body1-visibility-animation">
+          <input semantic="INPUT" source="#body1-visibility-animation-input"/>
+          <input semantic="OUTPUT" source="#body1-visibility-animation-output"/>
+          <input semantic="IN_TANGENT" source="#body1-visibility-animation-intan"/>
+          <input semantic="OUT_TANGENT" source="#body1-visibility-animation-outtan"/>
+          <input semantic="INTERPOLATION" source="#body1-visibility-animation-interpolation"/>
+        </sampler>
+        <channel source="#body1-visibility-animation" target="body1/visibility"/>
+      </animation>
+    </animation>
+    <animation id="head-anim" name="head">
+      <animation>
+        <source id="head-Matrix-animation-input">
+          <float_array id="head-Matrix-animation-input-array" count="16">
+
+0.000000 0.041667 0.083333 0.125000 0.166667 0.208333 0.250000 0.291667 0.333333 0.375000 0.416667 0.458333 0.500000 0.541667 0.583333 0.625000</float_array>
+          <technique_common>
+            <accessor source="#head-Matrix-animation-input-array" count="16">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="head-Matrix-animation-output-transform">
+          <float_array id="head-Matrix-animation-output-transform-array" count="256">
+
+1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#head-Matrix-animation-output-transform-array" count="16" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="head-Interpolations">
+          <Name_array id="head-Interpolations-array" count="16">
+ LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR
+LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#head-Interpolations-array" count="16">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="head-Matrix-animation-transform">
+          <input semantic="INPUT" source="#head-Matrix-animation-input"/>
+          <input semantic="OUTPUT" source="#head-Matrix-animation-output-transform"/>
+          <input semantic="INTERPOLATION" source="#head-Interpolations"/>
+        </sampler>
+        <channel source="#head-Matrix-animation-transform" target="head/matrix"/>
+      </animation>
+      <animation>
+        <source id="head-visibility-animation-input">
+          <float_array id="head-visibility-animation-input-array" count="4">
+
+0.000000 0.166667 0.333333 0.500000</float_array>
+          <technique_common>
+            <accessor source="#head-visibility-animation-input-array" count="4">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="head-visibility-animation-output">
+          <float_array id="head-visibility-animation-output-array" count="4">
+
+1.000000 1.000000 1.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#head-visibility-animation-output-array" count="4">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="head-visibility-animation-intan">
+          <float_array id="head-visibility-animation-intan-array" count="4">
+
+0.000000 0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#head-visibility-animation-intan-array" count="4">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="head-visibility-animation-outtan">
+          <float_array id="head-visibility-animation-outtan-array" count="4">
+
+0.000000 0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#head-visibility-animation-outtan-array" count="4">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="head-visibility-animation-interpolation">
+          <Name_array id="head-visibility-animation-interpolation-array" count="4">
+ STEP STEP STEP STEP</Name_array>
+          <technique_common>
+            <accessor source="#head-visibility-animation-interpolation-array" count="4">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="head-visibility-animation">
+          <input semantic="INPUT" source="#head-visibility-animation-input"/>
+          <input semantic="OUTPUT" source="#head-visibility-animation-output"/>
+          <input semantic="IN_TANGENT" source="#head-visibility-animation-intan"/>
+          <input semantic="OUT_TANGENT" source="#head-visibility-animation-outtan"/>
+          <input semantic="INTERPOLATION" source="#head-visibility-animation-interpolation"/>
+        </sampler>
+        <channel source="#head-visibility-animation" target="head/visibility"/>
+      </animation>
+    </animation>
+    <animation id="joint3-anim" name="joint3">
+      <animation>
+        <source id="joint3-Matrix-animation-input">
+          <float_array id="joint3-Matrix-animation-input-array" count="13">
+
+0.000000 0.041667 0.083333 0.125000 0.166667 0.208333 0.250000 0.291667 0.333333 0.375000 0.416667 0.458333 0.500000</float_array>
+          <technique_common>
+            <accessor source="#joint3-Matrix-animation-input-array" count="13">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint3-Matrix-animation-output-transform">
+          <float_array id="joint3-Matrix-animation-output-transform-array" count="208">
+
+1.000000 0.000000 0.000000 -6.731827 0.000000 1.000000 0.000000 0.198662 0.000000 0.000000 1.000000 -0.047761 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -6.731827 0.000000 1.000000 0.000000 0.198662 0.000000 0.000000 1.000000 -0.047761 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -6.731827 0.000000 1.000000 0.000000 0.198662 0.000000 0.000000 1.000000 -0.047761 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -6.731827 0.000000 1.000000 0.000000 0.198662 0.000000 0.000000 1.000000 -0.047761 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -6.731827 0.000000 1.000000 0.000000 0.198662 0.000000 0.000000 1.000000 -0.047761 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -6.731827 0.000000 1.000000 0.000000 0.198662 0.000000 0.000000 1.000000 -0.047761 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -6.731827 0.000000 1.000000 0.000000 0.198662 0.000000 0.000000 1.000000 -0.047761 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -6.731827 0.000000 1.000000 0.000000 0.198662 0.000000 0.000000 1.000000 -0.047761 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -6.731827 0.000000 1.000000 0.000000 0.198662 0.000000 0.000000 1.000000 -0.047761 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -6.731827 0.000000 1.000000 0.000000 0.198662 0.000000 0.000000 1.000000 -0.047761 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -6.731827 0.000000 1.000000 0.000000 0.198662 0.000000 0.000000 1.000000 -0.047761 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -6.731827 0.000000 1.000000 0.000000 0.198662 0.000000 0.000000 1.000000 -0.047761 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -6.731827 0.000000 1.000000 0.000000 0.198662 0.000000 0.000000 1.000000 -0.047761 0.000000 0.000000 0.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#joint3-Matrix-animation-output-transform-array" count="13" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint3-Interpolations">
+          <Name_array id="joint3-Interpolations-array" count="13">
+ LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR
+LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#joint3-Interpolations-array" count="13">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="joint3-Matrix-animation-transform">
+          <input semantic="INPUT" source="#joint3-Matrix-animation-input"/>
+          <input semantic="OUTPUT" source="#joint3-Matrix-animation-output-transform"/>
+          <input semantic="INTERPOLATION" source="#joint3-Interpolations"/>
+        </sampler>
+        <channel source="#joint3-Matrix-animation-transform" target="joint3/matrix"/>
+      </animation>
+      <animation>
+        <source id="joint3-visibility-animation-input">
+          <float_array id="joint3-visibility-animation-input-array" count="4">
+
+0.000000 0.166667 0.333333 0.500000</float_array>
+          <technique_common>
+            <accessor source="#joint3-visibility-animation-input-array" count="4">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint3-visibility-animation-output">
+          <float_array id="joint3-visibility-animation-output-array" count="4">
+
+1.000000 1.000000 1.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#joint3-visibility-animation-output-array" count="4">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint3-visibility-animation-intan">
+          <float_array id="joint3-visibility-animation-intan-array" count="4">
+
+0.000000 0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#joint3-visibility-animation-intan-array" count="4">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint3-visibility-animation-outtan">
+          <float_array id="joint3-visibility-animation-outtan-array" count="4">
+
+0.000000 0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#joint3-visibility-animation-outtan-array" count="4">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint3-visibility-animation-interpolation">
+          <Name_array id="joint3-visibility-animation-interpolation-array" count="4">
+ STEP STEP STEP STEP</Name_array>
+          <technique_common>
+            <accessor source="#joint3-visibility-animation-interpolation-array" count="4">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="joint3-visibility-animation">
+          <input semantic="INPUT" source="#joint3-visibility-animation-input"/>
+          <input semantic="OUTPUT" source="#joint3-visibility-animation-output"/>
+          <input semantic="IN_TANGENT" source="#joint3-visibility-animation-intan"/>
+          <input semantic="OUT_TANGENT" source="#joint3-visibility-animation-outtan"/>
+          <input semantic="INTERPOLATION" source="#joint3-visibility-animation-interpolation"/>
+        </sampler>
+        <channel source="#joint3-visibility-animation" target="joint3/visibility"/>
+      </animation>
+    </animation>
+    <animation id="wing_r-anim" name="wing_r">
+      <animation>
+        <source id="wing_r-Matrix-animation-input">
+          <float_array id="wing_r-Matrix-animation-input-array" count="16">
+
+0.000000 0.041667 0.083333 0.125000 0.166667 0.208333 0.250000 0.291667 0.333333 0.375000 0.416667 0.458333 0.500000 0.541667 0.583333 0.625000</float_array>
+          <technique_common>
+            <accessor source="#wing_r-Matrix-animation-input-array" count="16">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_r-Matrix-animation-output-transform">
+          <float_array id="wing_r-Matrix-animation-output-transform-array" count="256">
+
+1.000000 0.000000 0.000000 -1.762781 0.000000 1.000000 0.000000 2.483023 0.000000 0.000000 1.000000 -0.131648 0.000000 0.000000 0.000000 1.000000
+0.943617 0.005832 0.330986 -1.707945 -0.124366 0.932850 0.338120 2.536427 -0.306789 -0.360219 0.880978 -0.561451 0.000000 0.000000 0.000000 1.000000
+0.784042 -0.210322 0.583989 -1.653110 -0.210322 0.795167 0.568747 2.589832 -0.583989 -0.568747 0.579209 -0.991254 0.000000 0.000000 0.000000 1.000000
+0.943617 0.005832 0.330986 -1.707945 -0.124366 0.932850 0.338120 2.536427 -0.306789 -0.360219 0.880978 -0.561451 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.762781 0.000000 1.000000 0.000000 2.483023 0.000000 0.000000 1.000000 -0.131648 0.000000 0.000000 0.000000 1.000000
+0.943617 0.005832 0.330986 -1.707945 -0.124366 0.932850 0.338120 2.536427 -0.306789 -0.360219 0.880978 -0.561451 0.000000 0.000000 0.000000 1.000000
+0.784042 -0.210322 0.583989 -1.653110 -0.210322 0.795167 0.568747 2.589832 -0.583989 -0.568747 0.579209 -0.991254 0.000000 0.000000 0.000000 1.000000
+0.921083 -0.038463 0.387463 -1.707945 -0.125384 0.912803 0.388678 2.536427 -0.368627 -0.406586 0.835944 -0.561451 0.000000 0.000000 0.000000 1.000000
+0.991340 -0.008434 0.131050 -1.762781 -0.008434 0.991786 0.127630 2.483023 -0.131050 -0.127630 0.983126 -0.131648 0.000000 0.000000 0.000000 1.000000
+0.921083 -0.038463 0.387463 -1.707945 -0.125384 0.912803 0.388678 2.536427 -0.368627 -0.406586 0.835944 -0.561451 0.000000 0.000000 0.000000 1.000000
+0.784042 -0.210322 0.583989 -1.653110 -0.210322 0.795167 0.568747 2.589832 -0.583989 -0.568747 0.579209 -0.991254 0.000000 0.000000 0.000000 1.000000
+0.943617 0.005832 0.330986 -1.707945 -0.124366 0.932850 0.338120 2.536427 -0.306789 -0.360219 0.880978 -0.561451 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.762781 0.000000 1.000000 0.000000 2.483023 0.000000 0.000000 1.000000 -0.131648 0.000000 0.000000 0.000000 1.000000
+0.943617 0.005832 0.330986 -1.707945 -0.124366 0.932850 0.338120 2.536427 -0.306789 -0.360219 0.880978 -0.561451 0.000000 0.000000 0.000000 1.000000
+0.784042 -0.210322 0.583989 -1.653110 -0.210322 0.795167 0.568747 2.589832 -0.583989 -0.568747 0.579209 -0.991254 0.000000 0.000000 0.000000 1.000000
+0.808802 -0.186208 0.557822 -1.653110 -0.186208 0.818652 0.543264 2.589832 -0.557822 -0.543264 0.627454 -0.934498 0.000000 0.000000 0.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#wing_r-Matrix-animation-output-transform-array" count="16" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_r-Interpolations">
+          <Name_array id="wing_r-Interpolations-array" count="16">
+ LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR
+LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#wing_r-Interpolations-array" count="16">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="wing_r-Matrix-animation-transform">
+          <input semantic="INPUT" source="#wing_r-Matrix-animation-input"/>
+          <input semantic="OUTPUT" source="#wing_r-Matrix-animation-output-transform"/>
+          <input semantic="INTERPOLATION" source="#wing_r-Interpolations"/>
+        </sampler>
+        <channel source="#wing_r-Matrix-animation-transform" target="wing_r/matrix"/>
+      </animation>
+      <animation>
+        <source id="wing_r-visibility-animation-input">
+          <float_array id="wing_r-visibility-animation-input-array" count="9">
+
+0.000000 0.083333 0.166667 0.250000 0.333333 0.416667 0.500000 0.583333 0.625000</float_array>
+          <technique_common>
+            <accessor source="#wing_r-visibility-animation-input-array" count="9">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_r-visibility-animation-output">
+          <float_array id="wing_r-visibility-animation-output-array" count="9">
+
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#wing_r-visibility-animation-output-array" count="9">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_r-visibility-animation-intan">
+          <float_array id="wing_r-visibility-animation-intan-array" count="9">
+
+0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#wing_r-visibility-animation-intan-array" count="9">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_r-visibility-animation-outtan">
+          <float_array id="wing_r-visibility-animation-outtan-array" count="9">
+
+0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#wing_r-visibility-animation-outtan-array" count="9">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_r-visibility-animation-interpolation">
+          <Name_array id="wing_r-visibility-animation-interpolation-array" count="9">
+ STEP STEP STEP STEP STEP STEP STEP STEP STEP</Name_array>
+          <technique_common>
+            <accessor source="#wing_r-visibility-animation-interpolation-array" count="9">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="wing_r-visibility-animation">
+          <input semantic="INPUT" source="#wing_r-visibility-animation-input"/>
+          <input semantic="OUTPUT" source="#wing_r-visibility-animation-output"/>
+          <input semantic="IN_TANGENT" source="#wing_r-visibility-animation-intan"/>
+          <input semantic="OUT_TANGENT" source="#wing_r-visibility-animation-outtan"/>
+          <input semantic="INTERPOLATION" source="#wing_r-visibility-animation-interpolation"/>
+        </sampler>
+        <channel source="#wing_r-visibility-animation" target="wing_r/visibility"/>
+      </animation>
+    </animation>
+    <animation id="wing_r1-anim" name="wing_r1">
+      <animation>
+        <source id="wing_r1-Matrix-animation-input">
+          <float_array id="wing_r1-Matrix-animation-input-array" count="13">
+
+0.000000 0.041667 0.083333 0.125000 0.166667 0.208333 0.250000 0.291667 0.333333 0.375000 0.416667 0.458333 0.500000</float_array>
+          <technique_common>
+            <accessor source="#wing_r1-Matrix-animation-input-array" count="13">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_r1-Matrix-animation-output-transform">
+          <float_array id="wing_r1-Matrix-animation-output-transform-array" count="208">
+
+1.000000 0.000000 0.000000 3.856041 0.000000 1.000000 0.000000 4.435793 0.000000 0.000000 1.000000 -0.557752 0.000000 0.000000 0.000000 1.000000
+1.000000 -0.000000 0.000000 3.856041 0.000000 1.000000 -0.000000 4.435793 0.000000 0.000000 1.000000 -0.557752 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 3.856041 0.000000 1.000000 0.000000 4.435793 0.000000 0.000000 1.000000 -0.557752 0.000000 0.000000 0.000000 1.000000
+1.000000 -0.000000 0.000000 3.856041 0.000000 1.000000 -0.000000 4.435793 0.000000 0.000000 1.000000 -0.557752 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 3.856041 0.000000 1.000000 0.000000 4.435793 0.000000 0.000000 1.000000 -0.557752 0.000000 0.000000 0.000000 1.000000
+1.000000 -0.000000 0.000000 3.856041 0.000000 1.000000 -0.000000 4.435793 0.000000 0.000000 1.000000 -0.557752 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 3.856041 0.000000 1.000000 0.000000 4.435793 0.000000 0.000000 1.000000 -0.557752 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 -0.000000 3.856041 -0.000000 1.000000 0.000000 4.435793 -0.000000 -0.000000 1.000000 -0.557752 0.000000 0.000000 0.000000 1.000000
+1.000000 -0.000000 0.000000 3.856041 0.000000 1.000000 -0.000000 4.435793 0.000000 0.000000 1.000000 -0.557752 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 -0.000000 3.856041 -0.000000 1.000000 0.000000 4.435793 -0.000000 -0.000000 1.000000 -0.557752 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 3.856041 0.000000 1.000000 0.000000 4.435793 0.000000 0.000000 1.000000 -0.557752 0.000000 0.000000 0.000000 1.000000
+1.000000 -0.000000 0.000000 3.856041 0.000000 1.000000 -0.000000 4.435793 0.000000 0.000000 1.000000 -0.557752 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 3.856041 0.000000 1.000000 0.000000 4.435793 0.000000 0.000000 1.000000 -0.557752 0.000000 0.000000 0.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#wing_r1-Matrix-animation-output-transform-array" count="13" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_r1-Interpolations">
+          <Name_array id="wing_r1-Interpolations-array" count="13">
+ LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR
+LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#wing_r1-Interpolations-array" count="13">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="wing_r1-Matrix-animation-transform">
+          <input semantic="INPUT" source="#wing_r1-Matrix-animation-input"/>
+          <input semantic="OUTPUT" source="#wing_r1-Matrix-animation-output-transform"/>
+          <input semantic="INTERPOLATION" source="#wing_r1-Interpolations"/>
+        </sampler>
+        <channel source="#wing_r1-Matrix-animation-transform" target="wing_r1/matrix"/>
+      </animation>
+      <animation>
+        <source id="wing_r1-visibility-animation-input">
+          <float_array id="wing_r1-visibility-animation-input-array" count="4">
+
+0.000000 0.166667 0.333333 0.500000</float_array>
+          <technique_common>
+            <accessor source="#wing_r1-visibility-animation-input-array" count="4">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_r1-visibility-animation-output">
+          <float_array id="wing_r1-visibility-animation-output-array" count="4">
+
+1.000000 1.000000 1.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#wing_r1-visibility-animation-output-array" count="4">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_r1-visibility-animation-intan">
+          <float_array id="wing_r1-visibility-animation-intan-array" count="4">
+
+0.000000 0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#wing_r1-visibility-animation-intan-array" count="4">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_r1-visibility-animation-outtan">
+          <float_array id="wing_r1-visibility-animation-outtan-array" count="4">
+
+0.000000 0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#wing_r1-visibility-animation-outtan-array" count="4">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_r1-visibility-animation-interpolation">
+          <Name_array id="wing_r1-visibility-animation-interpolation-array" count="4">
+ STEP STEP STEP STEP</Name_array>
+          <technique_common>
+            <accessor source="#wing_r1-visibility-animation-interpolation-array" count="4">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="wing_r1-visibility-animation">
+          <input semantic="INPUT" source="#wing_r1-visibility-animation-input"/>
+          <input semantic="OUTPUT" source="#wing_r1-visibility-animation-output"/>
+          <input semantic="IN_TANGENT" source="#wing_r1-visibility-animation-intan"/>
+          <input semantic="OUT_TANGENT" source="#wing_r1-visibility-animation-outtan"/>
+          <input semantic="INTERPOLATION" source="#wing_r1-visibility-animation-interpolation"/>
+        </sampler>
+        <channel source="#wing_r1-visibility-animation" target="wing_r1/visibility"/>
+      </animation>
+    </animation>
+    <animation id="joint5-anim" name="joint5">
+      <animation>
+        <source id="joint5-Matrix-animation-input">
+          <float_array id="joint5-Matrix-animation-input-array" count="13">
+
+0.000000 0.041667 0.083333 0.125000 0.166667 0.208333 0.250000 0.291667 0.333333 0.375000 0.416667 0.458333 0.500000</float_array>
+          <technique_common>
+            <accessor source="#joint5-Matrix-animation-input-array" count="13">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint5-Matrix-animation-output-transform">
+          <float_array id="joint5-Matrix-animation-output-transform-array" count="208">
+
+1.000000 0.000000 0.000000 2.927712 0.000000 1.000000 0.000000 3.310311 0.000000 0.000000 1.000000 -0.295371 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 2.927712 -0.000000 1.000000 0.000000 3.310311 0.000000 0.000000 1.000000 -0.295371 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 2.927712 -0.000000 1.000000 0.000000 3.310311 0.000000 -0.000000 1.000000 -0.295371 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 2.927712 -0.000000 1.000000 0.000000 3.310311 0.000000 0.000000 1.000000 -0.295371 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 2.927712 0.000000 1.000000 0.000000 3.310311 0.000000 0.000000 1.000000 -0.295371 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 2.927712 -0.000000 1.000000 0.000000 3.310311 0.000000 0.000000 1.000000 -0.295371 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 2.927712 -0.000000 1.000000 0.000000 3.310311 0.000000 -0.000000 1.000000 -0.295371 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 -0.000000 2.927712 -0.000000 1.000000 0.000000 3.310311 -0.000000 -0.000000 1.000000 -0.295371 0.000000 0.000000 0.000000 1.000000
+1.000000 -0.000000 0.000000 2.927712 0.000000 1.000000 -0.000000 3.310311 0.000000 0.000000 1.000000 -0.295371 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 -0.000000 2.927712 -0.000000 1.000000 0.000000 3.310311 -0.000000 -0.000000 1.000000 -0.295371 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 2.927712 -0.000000 1.000000 0.000000 3.310311 0.000000 -0.000000 1.000000 -0.295371 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 2.927712 -0.000000 1.000000 0.000000 3.310311 0.000000 0.000000 1.000000 -0.295371 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 2.927712 0.000000 1.000000 0.000000 3.310311 0.000000 0.000000 1.000000 -0.295371 0.000000 0.000000 0.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#joint5-Matrix-animation-output-transform-array" count="13" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint5-Interpolations">
+          <Name_array id="joint5-Interpolations-array" count="13">
+ LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR
+LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#joint5-Interpolations-array" count="13">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="joint5-Matrix-animation-transform">
+          <input semantic="INPUT" source="#joint5-Matrix-animation-input"/>
+          <input semantic="OUTPUT" source="#joint5-Matrix-animation-output-transform"/>
+          <input semantic="INTERPOLATION" source="#joint5-Interpolations"/>
+        </sampler>
+        <channel source="#joint5-Matrix-animation-transform" target="joint5/matrix"/>
+      </animation>
+      <animation>
+        <source id="joint5-visibility-animation-input">
+          <float_array id="joint5-visibility-animation-input-array" count="4">
+
+0.000000 0.166667 0.333333 0.500000</float_array>
+          <technique_common>
+            <accessor source="#joint5-visibility-animation-input-array" count="4">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint5-visibility-animation-output">
+          <float_array id="joint5-visibility-animation-output-array" count="4">
+
+1.000000 1.000000 1.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#joint5-visibility-animation-output-array" count="4">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint5-visibility-animation-intan">
+          <float_array id="joint5-visibility-animation-intan-array" count="4">
+
+0.000000 0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#joint5-visibility-animation-intan-array" count="4">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint5-visibility-animation-outtan">
+          <float_array id="joint5-visibility-animation-outtan-array" count="4">
+
+0.000000 0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#joint5-visibility-animation-outtan-array" count="4">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint5-visibility-animation-interpolation">
+          <Name_array id="joint5-visibility-animation-interpolation-array" count="4">
+ STEP STEP STEP STEP</Name_array>
+          <technique_common>
+            <accessor source="#joint5-visibility-animation-interpolation-array" count="4">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="joint5-visibility-animation">
+          <input semantic="INPUT" source="#joint5-visibility-animation-input"/>
+          <input semantic="OUTPUT" source="#joint5-visibility-animation-output"/>
+          <input semantic="IN_TANGENT" source="#joint5-visibility-animation-intan"/>
+          <input semantic="OUT_TANGENT" source="#joint5-visibility-animation-outtan"/>
+          <input semantic="INTERPOLATION" source="#joint5-visibility-animation-interpolation"/>
+        </sampler>
+        <channel source="#joint5-visibility-animation" target="joint5/visibility"/>
+      </animation>
+    </animation>
+    <animation id="wing_l-anim" name="wing_l">
+      <animation>
+        <source id="wing_l-Matrix-animation-input">
+          <float_array id="wing_l-Matrix-animation-input-array" count="15">
+
+0.000000 0.041667 0.083333 0.125000 0.166667 0.208333 0.250000 0.291667 0.333333 0.375000 0.416667 0.458333 0.500000 0.541667 0.583333</float_array>
+          <technique_common>
+            <accessor source="#wing_l-Matrix-animation-input-array" count="15">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_l-Matrix-animation-output-transform">
+          <float_array id="wing_l-Matrix-animation-output-transform-array" count="240">
+
+1.000000 0.000000 0.000000 -1.747512 0.000000 1.000000 0.000000 2.494035 0.000000 0.000000 1.000000 0.025596 0.000000 0.000000 0.000000 1.000000
+0.943317 0.005889 -0.331840 -1.747512 -0.125093 0.932413 -0.339054 2.494035 0.307415 0.361346 0.880298 0.442973 0.000000 0.000000 0.000000 1.000000
+0.782961 -0.211374 -0.585058 -1.747512 -0.211374 0.794143 -0.569788 2.494035 0.585058 0.569788 0.577104 0.860351 0.000000 0.000000 0.000000 1.000000
+0.943317 0.005889 -0.331840 -1.747512 -0.125093 0.932413 -0.339054 2.494035 0.307415 0.361346 0.880298 0.442973 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.747512 0.000000 1.000000 0.000000 2.494035 0.000000 0.000000 1.000000 0.025596 0.000000 0.000000 0.000000 1.000000
+0.943317 0.005889 -0.331840 -1.747512 -0.125093 0.932413 -0.339054 2.494035 0.307415 0.361346 0.880298 0.442973 0.000000 0.000000 0.000000 1.000000
+0.782961 -0.211374 -0.585058 -1.747512 -0.211374 0.794143 -0.569788 2.494035 0.585058 0.569788 0.577104 0.860351 0.000000 0.000000 0.000000 1.000000
+0.929728 -0.022083 -0.367584 -1.747512 -0.124869 0.920155 -0.371111 2.494035 0.346429 0.390932 0.852736 0.442973 0.000000 0.000000 0.000000 1.000000
+0.996587 -0.003324 -0.082479 -1.747512 -0.003324 0.996763 -0.080327 2.494035 0.082479 0.080327 0.993350 0.025596 0.000000 0.000000 0.000000 1.000000
+0.929728 -0.022083 -0.367584 -1.747512 -0.124869 0.920155 -0.371111 2.494035 0.346429 0.390932 0.852736 0.442973 0.000000 0.000000 0.000000 1.000000
+0.782961 -0.211374 -0.585058 -1.747512 -0.211374 0.794143 -0.569788 2.494035 0.585058 0.569788 0.577104 0.860351 0.000000 0.000000 0.000000 1.000000
+0.943317 0.005889 -0.331840 -1.747512 -0.125093 0.932413 -0.339054 2.494035 0.307415 0.361346 0.880298 0.442973 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.747512 0.000000 1.000000 0.000000 2.494035 0.000000 0.000000 1.000000 0.025596 0.000000 0.000000 0.000000 1.000000
+0.945556 -0.053023 -0.321110 -1.747512 -0.053023 0.948361 -0.312730 2.494035 0.321110 0.312730 0.893917 0.442973 0.000000 0.000000 0.000000 1.000000
+0.782961 -0.211374 -0.585058 -1.747512 -0.211374 0.794143 -0.569788 2.494035 0.585058 0.569788 0.577104 0.860351 0.000000 0.000000 0.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#wing_l-Matrix-animation-output-transform-array" count="15" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_l-Interpolations">
+          <Name_array id="wing_l-Interpolations-array" count="15">
+ LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR
+LINEAR LINEAR LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#wing_l-Interpolations-array" count="15">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="wing_l-Matrix-animation-transform">
+          <input semantic="INPUT" source="#wing_l-Matrix-animation-input"/>
+          <input semantic="OUTPUT" source="#wing_l-Matrix-animation-output-transform"/>
+          <input semantic="INTERPOLATION" source="#wing_l-Interpolations"/>
+        </sampler>
+        <channel source="#wing_l-Matrix-animation-transform" target="wing_l/matrix"/>
+      </animation>
+      <animation>
+        <source id="wing_l-visibility-animation-input">
+          <float_array id="wing_l-visibility-animation-input-array" count="9">
+
+0.000000 0.083333 0.166667 0.250000 0.333333 0.416667 0.500000 0.541667 0.583333</float_array>
+          <technique_common>
+            <accessor source="#wing_l-visibility-animation-input-array" count="9">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_l-visibility-animation-output">
+          <float_array id="wing_l-visibility-animation-output-array" count="9">
+
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#wing_l-visibility-animation-output-array" count="9">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_l-visibility-animation-intan">
+          <float_array id="wing_l-visibility-animation-intan-array" count="9">
+
+0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#wing_l-visibility-animation-intan-array" count="9">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_l-visibility-animation-outtan">
+          <float_array id="wing_l-visibility-animation-outtan-array" count="9">
+
+0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#wing_l-visibility-animation-outtan-array" count="9">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_l-visibility-animation-interpolation">
+          <Name_array id="wing_l-visibility-animation-interpolation-array" count="9">
+ STEP STEP STEP STEP STEP STEP STEP STEP STEP</Name_array>
+          <technique_common>
+            <accessor source="#wing_l-visibility-animation-interpolation-array" count="9">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="wing_l-visibility-animation">
+          <input semantic="INPUT" source="#wing_l-visibility-animation-input"/>
+          <input semantic="OUTPUT" source="#wing_l-visibility-animation-output"/>
+          <input semantic="IN_TANGENT" source="#wing_l-visibility-animation-intan"/>
+          <input semantic="OUT_TANGENT" source="#wing_l-visibility-animation-outtan"/>
+          <input semantic="INTERPOLATION" source="#wing_l-visibility-animation-interpolation"/>
+        </sampler>
+        <channel source="#wing_l-visibility-animation" target="wing_l/visibility"/>
+      </animation>
+    </animation>
+    <animation id="wing_l2-anim" name="wing_l2">
+      <animation>
+        <source id="wing_l2-Matrix-animation-input">
+          <float_array id="wing_l2-Matrix-animation-input-array" count="15">
+
+0.000000 0.041667 0.083333 0.125000 0.166667 0.208333 0.250000 0.291667 0.333333 0.375000 0.416667 0.458333 0.500000 0.541667 0.583333</float_array>
+          <technique_common>
+            <accessor source="#wing_l2-Matrix-animation-input-array" count="15">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_l2-Matrix-animation-output-transform">
+          <float_array id="wing_l2-Matrix-animation-output-transform-array" count="240">
+
+1.000000 0.000000 0.000000 3.827807 0.000000 1.000000 0.000000 4.249132 0.000000 0.000000 1.000000 0.788602 0.000000 0.000000 0.000000 1.000000
+0.999227 0.000962 -0.039307 3.827807 -0.002713 0.999005 -0.044516 4.249132 0.039225 0.044588 0.998235 0.788602 0.000000 0.000000 0.000000 1.000000
+0.993693 -0.006534 -0.111941 3.827807 -0.007708 0.991959 -0.126325 4.249132 0.111866 0.126392 0.985653 0.788602 0.000000 0.000000 0.000000 1.000000
+0.988516 -0.015510 -0.150316 3.827807 -0.010352 0.985431 -0.169759 4.249132 0.150759 0.169365 0.973954 0.788602 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 3.827807 0.000000 1.000000 0.000000 4.249132 0.000000 0.000000 1.000000 0.788602 0.000000 0.000000 0.000000 1.000000
+0.988991 0.000237 0.147977 3.827807 -0.022035 0.989086 0.145683 4.249132 -0.146328 -0.147340 0.978202 0.788602 0.000000 0.000000 0.000000 1.000000
+0.956227 -0.042631 0.289505 3.827807 -0.042631 0.958482 0.281950 4.249132 -0.289505 -0.281950 0.914708 0.788602 0.000000 0.000000 0.000000 1.000000
+0.988991 0.000237 0.147977 3.827807 -0.022035 0.989086 0.145683 4.249132 -0.146328 -0.147340 0.978202 0.788602 0.000000 0.000000 0.000000 1.000000
+1.000000 -0.000000 0.000000 3.827807 0.000000 1.000000 0.000000 4.249132 0.000000 0.000000 1.000000 0.788602 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 3.827807 -0.000000 1.000000 -0.000000 4.249132 -0.000000 -0.000000 1.000000 0.788602 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 -0.000000 3.827807 0.000000 1.000000 -0.000000 4.249132 0.000000 0.000000 1.000000 0.788602 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 3.827807 -0.000000 1.000000 0.000000 4.249132 0.000000 0.000000 1.000000 0.788602 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 3.827807 0.000000 1.000000 0.000000 4.249132 0.000000 0.000000 1.000000 0.788602 0.000000 0.000000 0.000000 1.000000
+0.988991 0.000237 0.147977 3.827807 -0.022035 0.989086 0.145683 4.249132 -0.146328 -0.147340 0.978202 0.788602 0.000000 0.000000 0.000000 1.000000
+0.956227 -0.042631 0.289505 3.827807 -0.042631 0.958482 0.281950 4.249132 -0.289505 -0.281950 0.914708 0.788602 0.000000 0.000000 0.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#wing_l2-Matrix-animation-output-transform-array" count="15" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_l2-Interpolations">
+          <Name_array id="wing_l2-Interpolations-array" count="15">
+ LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR
+LINEAR LINEAR LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#wing_l2-Interpolations-array" count="15">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="wing_l2-Matrix-animation-transform">
+          <input semantic="INPUT" source="#wing_l2-Matrix-animation-input"/>
+          <input semantic="OUTPUT" source="#wing_l2-Matrix-animation-output-transform"/>
+          <input semantic="INTERPOLATION" source="#wing_l2-Interpolations"/>
+        </sampler>
+        <channel source="#wing_l2-Matrix-animation-transform" target="wing_l2/matrix"/>
+      </animation>
+      <animation>
+        <source id="wing_l2-visibility-animation-input">
+          <float_array id="wing_l2-visibility-animation-input-array" count="7">
+
+0.000000 0.125000 0.166667 0.250000 0.333333 0.500000 0.583333</float_array>
+          <technique_common>
+            <accessor source="#wing_l2-visibility-animation-input-array" count="7">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_l2-visibility-animation-output">
+          <float_array id="wing_l2-visibility-animation-output-array" count="7">
+
+1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#wing_l2-visibility-animation-output-array" count="7">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_l2-visibility-animation-intan">
+          <float_array id="wing_l2-visibility-animation-intan-array" count="7">
+
+0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#wing_l2-visibility-animation-intan-array" count="7">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_l2-visibility-animation-outtan">
+          <float_array id="wing_l2-visibility-animation-outtan-array" count="7">
+
+0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#wing_l2-visibility-animation-outtan-array" count="7">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wing_l2-visibility-animation-interpolation">
+          <Name_array id="wing_l2-visibility-animation-interpolation-array" count="7">
+ STEP STEP STEP STEP STEP STEP STEP</Name_array>
+          <technique_common>
+            <accessor source="#wing_l2-visibility-animation-interpolation-array" count="7">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="wing_l2-visibility-animation">
+          <input semantic="INPUT" source="#wing_l2-visibility-animation-input"/>
+          <input semantic="OUTPUT" source="#wing_l2-visibility-animation-output"/>
+          <input semantic="IN_TANGENT" source="#wing_l2-visibility-animation-intan"/>
+          <input semantic="OUT_TANGENT" source="#wing_l2-visibility-animation-outtan"/>
+          <input semantic="INTERPOLATION" source="#wing_l2-visibility-animation-interpolation"/>
+        </sampler>
+        <channel source="#wing_l2-visibility-animation" target="wing_l2/visibility"/>
+      </animation>
+    </animation>
+    <animation id="joint4-anim" name="joint4">
+      <animation>
+        <source id="joint4-Matrix-animation-input">
+          <float_array id="joint4-Matrix-animation-input-array" count="13">
+
+0.000000 0.041667 0.083333 0.125000 0.166667 0.208333 0.250000 0.291667 0.333333 0.375000 0.416667 0.458333 0.500000</float_array>
+          <technique_common>
+            <accessor source="#joint4-Matrix-animation-input-array" count="13">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint4-Matrix-animation-output-transform">
+          <float_array id="joint4-Matrix-animation-output-transform-array" count="208">
+
+1.000000 0.000000 0.000000 3.164141 0.000000 1.000000 0.000000 3.285154 0.000000 0.000000 1.000000 0.478167 0.000000 0.000000 0.000000 1.000000
+1.000000 -0.000000 0.000000 3.164141 0.000000 1.000000 0.000000 3.285154 -0.000000 0.000000 1.000000 0.478167 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 3.164141 -0.000000 1.000000 -0.000000 3.285154 0.000000 0.000000 1.000000 0.478167 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 3.164141 -0.000000 1.000000 0.000000 3.285154 -0.000000 0.000000 1.000000 0.478167 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 3.164141 0.000000 1.000000 0.000000 3.285154 0.000000 0.000000 1.000000 0.478167 0.000000 0.000000 0.000000 1.000000
+1.000000 -0.000000 -0.000000 3.164141 -0.000000 1.000000 0.000000 3.285154 0.000000 0.000000 1.000000 0.478167 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 3.164141 -0.000000 1.000000 0.000000 3.285154 0.000000 0.000000 1.000000 0.478167 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 3.164141 -0.000000 1.000000 -0.000000 3.285154 -0.000000 0.000000 1.000000 0.478167 0.000000 0.000000 0.000000 1.000000
+1.000000 -0.000000 0.000000 3.164141 0.000000 1.000000 0.000000 3.285154 0.000000 0.000000 1.000000 0.478167 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 -0.000000 3.164141 0.000000 1.000000 0.000000 3.285154 0.000000 0.000000 1.000000 0.478167 0.000000 0.000000 0.000000 1.000000
+1.000000 -0.000000 -0.000000 3.164141 0.000000 1.000000 0.000000 3.285154 0.000000 -0.000000 1.000000 0.478167 0.000000 0.000000 0.000000 1.000000
+1.000000 -0.000000 0.000000 3.164141 0.000000 1.000000 0.000000 3.285154 0.000000 0.000000 1.000000 0.478167 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 3.164141 0.000000 1.000000 0.000000 3.285154 0.000000 0.000000 1.000000 0.478167 0.000000 0.000000 0.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#joint4-Matrix-animation-output-transform-array" count="13" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint4-Interpolations">
+          <Name_array id="joint4-Interpolations-array" count="13">
+ LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR
+LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#joint4-Interpolations-array" count="13">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="joint4-Matrix-animation-transform">
+          <input semantic="INPUT" source="#joint4-Matrix-animation-input"/>
+          <input semantic="OUTPUT" source="#joint4-Matrix-animation-output-transform"/>
+          <input semantic="INTERPOLATION" source="#joint4-Interpolations"/>
+        </sampler>
+        <channel source="#joint4-Matrix-animation-transform" target="joint4/matrix"/>
+      </animation>
+      <animation>
+        <source id="joint4-visibility-animation-input">
+          <float_array id="joint4-visibility-animation-input-array" count="4">
+
+0.000000 0.166667 0.333333 0.500000</float_array>
+          <technique_common>
+            <accessor source="#joint4-visibility-animation-input-array" count="4">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint4-visibility-animation-output">
+          <float_array id="joint4-visibility-animation-output-array" count="4">
+
+1.000000 1.000000 1.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#joint4-visibility-animation-output-array" count="4">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint4-visibility-animation-intan">
+          <float_array id="joint4-visibility-animation-intan-array" count="4">
+
+0.000000 0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#joint4-visibility-animation-intan-array" count="4">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint4-visibility-animation-outtan">
+          <float_array id="joint4-visibility-animation-outtan-array" count="4">
+
+0.000000 0.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor source="#joint4-visibility-animation-outtan-array" count="4">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="joint4-visibility-animation-interpolation">
+          <Name_array id="joint4-visibility-animation-interpolation-array" count="4">
+ STEP STEP STEP STEP</Name_array>
+          <technique_common>
+            <accessor source="#joint4-visibility-animation-interpolation-array" count="4">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="joint4-visibility-animation">
+          <input semantic="INPUT" source="#joint4-visibility-animation-input"/>
+          <input semantic="OUTPUT" source="#joint4-visibility-animation-output"/>
+          <input semantic="IN_TANGENT" source="#joint4-visibility-animation-intan"/>
+          <input semantic="OUT_TANGENT" source="#joint4-visibility-animation-outtan"/>
+          <input semantic="INTERPOLATION" source="#joint4-visibility-animation-interpolation"/>
+        </sampler>
+        <channel source="#joint4-visibility-animation" target="joint4/visibility"/>
+      </animation>
+    </animation>
+  </library_animations>
+  <library_visual_scenes>
+    <visual_scene id="bee" name="bee">
+      <node name="sm_Bee_Body" id="sm_Bee_Body" layer="BeeMain_Body" sid="sm_Bee_Body">
+        <instance_controller url="#sm_Bee_BodyController">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="M_Bee_Body" target="#M_Bee_Body"/>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node name="sm_Bee_Wing_l" id="sm_Bee_Wing_l" layer="BeeBackground_Wing" sid="sm_Bee_Wing_l">
+        <instance_controller url="#sm_Bee_Wing_lController">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="M_Bee_Wing" target="#M_Bee_Wing"/>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node name="sm_Bee_Wing_r" id="sm_Bee_Wing_r" layer="BeeBackground_Wing" sid="sm_Bee_Wing_r">
+        <instance_controller url="#sm_Bee_Wing_rController">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="M_Bee_Wing" target="#M_Bee_Wing"/>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node name="body1" id="body1" layer="BeeBackground_Wing" sid="body1" type="JOINT">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 7.193541 0.000000 1.000000 0.000000 -1.615170 0.000000 0.000000 1.000000 0.058681 0.000000 0.000000 0.000000 1.000000</matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+        <node name="head" id="head" layer="BeeBackground_Wing" sid="head" type="JOINT">
+          <matrix sid="matrix">1.000000 0.000000 0.000000 -7.534302 0.000000 1.000000 0.000000 0.109989 0.000000 0.000000 1.000000 0.047060 0.000000 0.000000 0.000000 1.000000</matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+          <node name="joint3" id="joint3" layer="BeeBackground_Wing" sid="joint3" type="JOINT">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 -6.731827 0.000000 1.000000 0.000000 0.198662 0.000000 0.000000 1.000000 -0.047761 0.000000 0.000000 0.000000 1.000000</matrix>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="wing_r" id="wing_r" layer="BeeBackground_Wing" sid="wing_r" type="JOINT">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 -1.762781 0.000000 1.000000 0.000000 2.483023 0.000000 0.000000 1.000000 -0.131648 0.000000 0.000000 0.000000 1.000000</matrix>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+            <node name="wing_r1" id="wing_r1" layer="BeeBackground_Wing" sid="wing_r1" type="JOINT">
+              <matrix sid="matrix">1.000000 0.000000 0.000000 3.856041 0.000000 1.000000 0.000000 4.435793 0.000000 0.000000 1.000000 -0.557752 0.000000 0.000000 0.000000 1.000000</matrix>
+              <extra>
+                <technique profile="FCOLLADA">
+                  <visibility>1.000000</visibility>
+                </technique>
+              </extra>
+              <node name="joint5" id="joint5" layer="BeeBackground_Wing" sid="joint5" type="JOINT">
+                <matrix sid="matrix">1.000000 0.000000 0.000000 2.927712 0.000000 1.000000 0.000000 3.310311 0.000000 0.000000 1.000000 -0.295371 0.000000 0.000000 0.000000 1.000000</matrix>
+                <extra>
+                  <technique profile="FCOLLADA">
+                    <visibility>1.000000</visibility>
+                  </technique>
+                </extra>
+              </node>
+            </node>
+          </node>
+          <node name="wing_l" id="wing_l" layer="BeeBackground_Wing" sid="wing_l" type="JOINT">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 -1.747512 0.000000 1.000000 0.000000 2.494035 0.000000 0.000000 1.000000 0.025596 0.000000 0.000000 0.000000 1.000000</matrix>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+            <node name="wing_l2" id="wing_l2" layer="BeeBackground_Wing" sid="wing_l2" type="JOINT">
+              <matrix sid="matrix">1.000000 0.000000 0.000000 3.827807 0.000000 1.000000 0.000000 4.249132 0.000000 0.000000 1.000000 0.788602 0.000000 0.000000 0.000000 1.000000</matrix>
+              <extra>
+                <technique profile="FCOLLADA">
+                  <visibility>1.000000</visibility>
+                </technique>
+              </extra>
+              <node name="joint4" id="joint4" layer="BeeBackground_Wing" sid="joint4" type="JOINT">
+                <matrix sid="matrix">1.000000 0.000000 0.000000 3.164141 0.000000 1.000000 0.000000 3.285154 0.000000 0.000000 1.000000 0.478167 0.000000 0.000000 0.000000 1.000000</matrix>
+                <extra>
+                  <technique profile="FCOLLADA">
+                    <visibility>1.000000</visibility>
+                  </technique>
+                </extra>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>24.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.000000</start_time>
+          <end_time>0.625000</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#bee"/>
+  </scene>
+</COLLADA>

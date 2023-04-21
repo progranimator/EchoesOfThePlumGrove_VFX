@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace ButterflyManager
@@ -9,6 +10,7 @@ namespace ButterflyManager
         public float width = 4.0f; // width of the triangle
         public float rotationSpeed = 5.0f; // rotation speed in degrees per second
         public float rotationAmount = 5.0f;
+        public float spawnTimer = 5.0f;
         public float RotationTimer = 5.0f;
         public float TimeMultiplier;
         public string TagName;
@@ -20,12 +22,11 @@ namespace ButterflyManager
         public float positiveZ;
 
         private Vector3 startPosition; // starting position of the object
-        //private bool useXAxis = true;
-        public float axisSwitchTimer = 0.0f;
 
         void Start()
         {
             startPosition = transform.position;
+            StartCoroutine(DestroyAfterTime());
         }
 
         void Update()
@@ -77,6 +78,12 @@ namespace ButterflyManager
             {
                 transform.Rotate(Vector3.forward, rotationSpeed * rotationAmount * negativeZ);
             }
+        }
+
+        IEnumerator DestroyAfterTime()
+        {
+            yield return new WaitForSeconds(spawnTimer);
+            Destroy(gameObject);
         }
     }
 }
