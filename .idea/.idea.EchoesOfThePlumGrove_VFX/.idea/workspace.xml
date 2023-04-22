@@ -2,32 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abbc7565-a7b4-4c72-9f05-416951ee019c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Butterflies/M_pinkButterfly.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Butterflies/M_pinkButterfly.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/pinkButterfly.dae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/pinkButterfly.dae.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Playground.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BeeManager/AIBee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BeeManager/AIBee.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BeeManager/BeeHive.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BeeManager/BeeHive.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButterflyManager/AController_Butterfly.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ButterflyManager/AController_Butterfly.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButterflyManager/ButterflyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ButterflyManager/ButterflyManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker18.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker18.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker19.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker19.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker20.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker20.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker21.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker21.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker22.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker22.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker23.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker23.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker24.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker24.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker25.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker25.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker26.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker26.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker27.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker27.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker28.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker28.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker29.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker29.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker30.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker30.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker31.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker31.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker32.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker32.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker33.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker33.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EchoesOfThePlumGrove_VFX/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EchoesOfThePlumGrove_VFX/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker18.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker20.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker21.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker22.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker24.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker26.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker27.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker28.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker32.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker33.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +112,7 @@
       <workItem from="1681689874788" duration="7070000" />
       <workItem from="1681766896838" duration="48646000" />
       <workItem from="1682033148508" duration="4916000" />
-      <workItem from="1682099702424" duration="1006000" />
+      <workItem from="1682099702424" duration="2335000" />
     </task>
     <servers />
   </component>
