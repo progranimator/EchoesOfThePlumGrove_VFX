@@ -77,6 +77,7 @@
      <Folder Include="Assets\Prefabs\Butterfly" />
      <Folder Include="Assets\Environment\Art\Skybox" />
      <Folder Include="Assets\Materials\RenderPipeline" />
+     <Folder Include="Assets\Materials\Fish" />
      <Folder Include="Assets\Materials\Butterflies" />
      <Folder Include="Assets\Scenes\Playground" />
      <Folder Include="Assets\Textures" />
