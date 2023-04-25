@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\BeeManager\AIBee.cs" />
      <Compile Include="Assets\Scripts\Tech\TimeOfDay.cs" />
      <Compile Include="Assets\Materials\Snow\SnowCamera.cs" />
+     <Compile Include="Assets\Scripts\Fish\Fish_PlayAnim.cs" />
      <Compile Include="Assets\Materials\Snow\GeoShader\CameraGrid.cs" />
      <Compile Include="Assets\Scripts\BeeManager\BeeHive.cs" />
      <Compile Include="Assets\Scripts\BeeManager\BeeSwirl.cs" />
@@ -96,6 +97,7 @@
      <Folder Include="Assets\Environment\Art" />
      <Folder Include="Assets\Environment" />
      <Folder Include="Assets\Models" />
+     <Folder Include="Assets\Scripts\Fish" />
      <Folder Include="Assets\Environment\Art\Textures" />
      <Folder Include="Assets\TutorialInfo\Icons" />
      <Folder Include="Assets\Environment\Shaders" />
